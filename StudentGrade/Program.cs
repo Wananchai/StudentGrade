@@ -48,61 +48,28 @@ namespace ConsoleApp_Third
 
                 while (_Loop < manyStudent)
                 {
-                    float gradesScore = 0.0f;   // This is the local variables in 'do..while' statement.
+                    float Gscore = 0.0f;   // This is the local variables in 'do..while' statement.
 
                     #region Writng an if..else..if code without curly brackets type 1. 
 
                     // For example, we use this region as defualt code.
-                    if (Sscore[_Loop] <= 49) gradesScore = 0f;
-                    else if (Sscore[_Loop] <= 54) gradesScore = 1f;
-                    else if (Sscore[_Loop] <= 59) gradesScore = 1.5f;
-                    else if (Sscore[_Loop] <= 64) gradesScore = 2f;
-                    else if (Sscore[_Loop] <= 69) gradesScore = 2.5f;
-                    else if (Sscore[_Loop] <= 74) gradesScore = 3f;
-                    else if (Sscore[_Loop] <= 79) gradesScore = 3.5f;
-                    else if (Sscore[_Loop] >= 80) gradesScore = 4f;
+                    if (Sscore[_Loop] <= 49) Gscore = 0f;
+                    else if (Sscore[_Loop] <= 54) Gscore = 1f;
+                    else if (Sscore[_Loop] <= 59) Gscore = 1.5f;
+                    else if (Sscore[_Loop] <= 64) Gscore = 2f;
+                    else if (Sscore[_Loop] <= 69) Gscore = 2.5f;
+                    else if (Sscore[_Loop] <= 74) Gscore = 3f;
+                    else if (Sscore[_Loop] <= 79) Gscore = 3.5f;
+                    else if (Sscore[_Loop] >= 80) Gscore = 4f;
 
                     #endregion
 
                     #region Writing an if..else..if code with curly brackets.
 
-                    if (Sscore[_Loop] <= 49)
-                    {
-                        gradesScore = 0f;
-                    }
-                    else if (Sscore[_Loop] <= 54)
-                    {
-                        gradesScore = 1f;
-                    }
-                    else if (Sscore[_Loop] <= 59)
-                    {
-                        gradesScore = 1.5f;
-                    }
-                    else if (Sscore[_Loop] <= 64)
-                    {
-                        gradesScore = 2f;
-                    }
-                    else if (Sscore[_Loop] <= 69)
-                    {
-                        gradesScore = 2.5f;
-                    }
-                    else if (Sscore[_Loop] <= 74)
-                    {
-                        gradesScore = 3f;
-                    }
-                    else if (Sscore[_Loop] <= 79)
-                    {
-                        gradesScore = 3.5f;
-                    }
-                    else if (Sscore[_Loop] >= 80)
-                    {
-                        gradesScore = 4f;
-                    }
-
                     #endregion
 
                     Console.WriteLine($"{_Loop + 1}. {SN[_Loop]} have a" +
-                                    $" total {Sscore[_Loop]} score or {gradesScore} grades.");
+                                    $" total {Sscore[_Loop]} score or {Gscore} grades.");
                     _Loop++;
                 } while (_Loop < manyStudent);
 
