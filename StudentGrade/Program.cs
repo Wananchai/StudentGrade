@@ -32,6 +32,7 @@ namespace ConsoleApp_Third
                     Console.Write($"\nPlease key student({Loop + 1} of {manyStudent}) name : ");
                     SN[Loop] = Console.ReadLine();
 
+
                     Console.Write($"Please key {SN[Loop]}'s middle score : ");
                     Mscore[Loop] = Convert.ToInt32(Console.ReadLine());
 
@@ -61,10 +62,6 @@ namespace ConsoleApp_Third
                     else if (Sscore[_Loop] <= 74) Gscore = 3f;
                     else if (Sscore[_Loop] <= 79) Gscore = 3.5f;
                     else if (Sscore[_Loop] >= 80) Gscore = 4f;
-
-                    #endregion
-
-                    #region Writing an if..else..if code with curly brackets.
 
                     #endregion
 
